@@ -4,3 +4,5 @@ steps:
     #   super_secret: ${{ secrets.SuperSecret }}
     env: # Or as an environment variable
       LIFF_ID: ${{ secrets.LIFF_ID}}
+    run:
+      LIFF_ID: --token=${{ secrets.LIFF_ID }}
